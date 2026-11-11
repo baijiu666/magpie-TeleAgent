@@ -1,0 +1,43 @@
+{
+  "name": "magpie-teleagent",
+  "version": "0.8.0",
+  "description": "magpie-TeleAgent：把 TeleAgent（星辰超级智能体，中国电信天翼 AI）接进 magpie。",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "src",
+    "README.md",
+    "ERROR-CODES.md",
+    "registry-entry.json",
+    "tests"
+  ],
+  "keywords": [
+    "magpie",
+    "magpie-plugin",
+    "opencode",
+    "opencode-auth",
+    "provider",
+    "teleagent",
+    "teleai",
+    "星辰超级智能体"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baijiu666/magpie-TeleAgent.git"
+  },
+  "homepage": "https://github.com/baijiu666/magpie-TeleAgent#readme",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "magpie": {
+    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcng9IjI4IiBmaWxsPSIjMDA2OGI3Ii8+PHBhdGggZD0iTTY0IDI0bDkuMiAyMi44TDk2IDU2bC0yMi44IDkuMkw2NCA4OGwtOS4yLTIyLjhMMzIgNTZsMjIuOC05LjJ6IiBmaWxsPSIjZmZmIi8+PGNpcmNsZSBjeD0iNjQiIGN5PSI2NCIgcj0iNDciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4zNSIgc3Ryb2tlLXdpZHRoPSIzIi8+PC9zdmc+",
+    "name": "magpie-TeleAgent",
+    "maxConcurrency": 3
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "package": "magpie-teleagent",
+  "name": "magpie-TeleAgent",
+  "providers": [
+    "teleagent"
+  ],
+  "summary": {
+    "en": "magpie-TeleAgent: brings TeleAgent (China Telecom TeleAI) into magpie.",
+    "zh": "magpie-TeleAgent：把 TeleAgent（星辰超级智能体，中国电信天翼 AI）接进 magpie。"
+  }
+}
