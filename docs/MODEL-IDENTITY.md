@@ -6,7 +6,7 @@
 
 ## 已完成的参考对照
 
-通过本机 Magpie 对三个 TeleAgent 档位与 `wps-lingxi/GLM-5.3`、`wps-lingxi/GLM-5.3-Flash` 执行同一组 10 道题，共 50 次请求，全部 HTTP 200。
+通过本机 Magpie 对三个 TeleAgent 档位与 `GLM-5.3`、`GLM-5.3-Flash` 参考模型执行同一组 10 道题，共 50 次请求，全部 HTTP 200。
 
 短题结果高度相似：特殊字符复制、Python 平方和函数、未知函数 `zq_flux_capacity_v7`、`strawberry` 字母计数、矩阵转置、2 的 10 次方等输出一致或基本一致。该现象只说明**短题行为相似**，不能证明同一底座，也不能证明三档是三个不同底座。
 
