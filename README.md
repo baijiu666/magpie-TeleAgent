@@ -46,6 +46,8 @@ provider   teleagent（模型名 teleagent/<id>）
 
 2026-11-13 补充核实：三档均曾自报 `Z.ai, GLM`，但旗舰重复身份题中又出现 `GLM-130B`、`GLM-4-6B`、`GLM-4.6`、`GLM-4` 以及 `Moonshot AI, Kimi`，说明自报版本不稳定。与 `GLM-5.3`、`GLM-5.3-Flash` 的 50 次同题对照显示短题行为相似，但行为相似不能证明同一底座。最终结论仍是 **GLM/Z.ai 有线索，具体版本不可定版**，详见 [docs/MODEL-IDENTITY.md](docs/MODEL-IDENTITY.md)。
 
+**能否指定底层模型：不能可靠指定。** 使用 `glm-5.3`、`glm-5.3-flash`、`glm-4.6` 和完全不存在的 `glm-does-not-exist` 做同一组确定性题时，数学/Python/法语输出相同，只有身份自报随机变化；说明这些名称进入同一回退通道。`model-options` 只列 `chat-*` 三个别名，隐藏参数会被网关拒绝，引擎内也没有型号映射。因此插件不提供自定义底层模型选择，避免把回退结果误标成真实模型。
+
 ## 思考模式（reasoning_effort）
 
 设置页**没有**「思考模式」开关（`preset-context.json` 里只有 `contextLength`），
