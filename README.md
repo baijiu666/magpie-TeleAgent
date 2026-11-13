@@ -44,6 +44,8 @@ provider   teleagent（模型名 teleagent/<id>）
 
 模型列表只显示官方名称（**智能 / 旗舰 / 极速**）；真实 ID（`chat-pro` / `chat-flagship` / `chat-flash`）只用于内部请求，不再拼进显示名。
 
+2026-11-13 补充核实：三档均曾自报 `Z.ai, GLM`，但旗舰重复身份题中又出现 `GLM-130B`、`GLM-4-6B`、`GLM-4.6`、`GLM-4` 以及 `Moonshot AI, Kimi`，说明自报版本不稳定。与 `wps-lingxi/GLM-5.3`、`GLM-5.3-Flash` 的 50 次同题对照显示短题行为相似，但行为相似不能证明同一底座。最终结论仍是 **GLM/Z.ai 有线索，具体版本不可定版**，详见 [docs/MODEL-IDENTITY.md](docs/MODEL-IDENTITY.md)。
+
 ## 思考模式（reasoning_effort）
 
 设置页**没有**「思考模式」开关（`preset-context.json` 里只有 `contextLength`），
